@@ -1,28 +1,18 @@
-# User Management System (UMS)
+# User Management Service (UMS)
 
 ## Overview
 
 The **User Management System (UMS)** is designed to manage user data with an emphasis on security, scalability, and performance. It facilitates **CRUD operations** (Create, Read, Update, Delete) for user accounts, profiles, roles, and preferences in a secure, fast, and efficient manner. This system ensures that sensitive information like user credentials, personal data, and role-based permissions are managed with utmost care, providing APIs for seamless integration into larger systems.
 
 ### Key Features:
-- **User Authentication and Authorization:** Secure handling of user logins, signups, and session management using JWT, OAuth, or other industry-standard protocols.
 - **Role-Based Access Control (RBAC):** Management of user roles and permissions to control access to various resources or functionalities.
 - **Profile Management:** User data such as preferences, contact information, and profile updates.
 - **Password Management:** Secure password storage and handling, including hashing and reset workflows.
 - **APIs for User Data Management:** RESTful APIs or GraphQL interfaces to manage user data across various platforms and services.
   
 ## Tech Stack
-
-- **Frontend:** 
-  - Framework: React.js (for single-page applications) or Next.js (for server-side rendering).
-  - State Management: Redux or Context API (for managing user authentication and profile data).
-  - Styling: Tailwind CSS or Material UI for responsive and modern UI design.
-
-- **Backend:** 
-  - **Node.js** with **Express.js** for building RESTful APIs.
-  - **MongoDB** (NoSQL database) for flexible user data storage, including roles, preferences, and other profile data.
-  - **Redis** or **Memcached** for session and cache management, improving response times.
-  - **JWT/OAuth2** for secure user authentication and session management.
+  - **.NET** with **C#** for building RESTful APIs.
+  - **Redis** for session and cache management, improving response times.
   - **Bcrypt** or **Argon2** for password hashing.
   
 - **Security:**
@@ -49,30 +39,10 @@ The UMS is designed to scale efficiently:
 - **CDN** for static content delivery to reduce latency in user profile loading.
 - **Edge computing** for routing traffic to the nearest data center, reducing round-trip times.
 
-## Future Roadmap
-
-### 1. Machine Learning Integration:
-   - **Fraud Detection**: Anomaly detection to spot unusual login patterns or account activities, reducing security breaches.
-   - **User Behavior Prediction**: Personalization of user interfaces or recommendations based on past user behavior.
-   - **Password Strength Evaluation**: Using ML models to assess password strength and suggest improvements during account creation.
-
-### 2. Microservices Architecture:
-   - Splitting the monolithic UMS into smaller microservices for better scalability, fault isolation, and independent deployments. Services could include Authentication, Profile Management, Notification Service, etc.
-
-### 3. Multi-Cloud Support:
-   - Deploy across multiple cloud providers like AWS, Azure, or GCP to ensure high availability and fault tolerance in the case of regional outages.
-  
-### 4. Advanced Analytics and Reporting:
-   - Incorporating **ELK Stack** (Elasticsearch, Logstash, Kibana) for log monitoring and advanced analytics.
-   - Real-time dashboards to track user activities, failed logins, system performance, etc.
-
-### 5. WebSocket and Real-Time Updates:
-   - Implement real-time notifications for user profile changes, session management, or security warnings using **WebSockets** or **Socket.IO**.
 
 ## Performance Benchmarks
 
 ### Expected Latency:
-- **Authentication API**: < 200ms response time for user login/signup.
 - **Profile Update API**: < 100ms for updating user profile data.
 - **Role Management**: < 150ms for assigning/removing roles from users.
 
@@ -83,9 +53,9 @@ The UMS is designed to scale efficiently:
 ## Setup and Installation
 
 ### Prerequisites:
-- **Node.js** v16+ and **npm** v7+
-- **MongoDB** or an equivalent database setup
+- **.NET** 8.0 (latest)
 - **Docker** (for containerized environments)
+- **Kubernetes**
 
 ### Installation:
 
@@ -111,7 +81,6 @@ The UMS is designed to scale efficiently:
    npm start
    ```
 
-5. Access the API at `http://localhost:3000/api`.
 
 ### Testing:
 - Run unit tests using **Jest**:
