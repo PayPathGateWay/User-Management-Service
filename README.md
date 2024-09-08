@@ -5,7 +5,6 @@
 The **User Management System (UMS)** is designed to manage user data with an emphasis on security, scalability, and performance. It facilitates **CRUD operations** (Create, Read, Update, Delete) for user accounts, profiles, roles, and preferences in a secure, fast, and efficient manner. This system ensures that sensitive information like user credentials, personal data, and role-based permissions are managed with utmost care, providing APIs for seamless integration into larger systems.
 
 ### Key Features:
-- **User Authentication and Authorization:** Secure handling of user logins, signups, and session management using JWT, OAuth, or other industry-standard protocols.
 - **Role-Based Access Control (RBAC):** Management of user roles and permissions to control access to various resources or functionalities.
 - **Profile Management:** User data such as preferences, contact information, and profile updates.
 - **Password Management:** Secure password storage and handling, including hashing and reset workflows.
