@@ -1,4 +1,4 @@
-# User Management System (UMS)
+# User Management Service (UMS)
 
 ## Overview
 
