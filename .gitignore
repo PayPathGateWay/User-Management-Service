@@ -1,1 +1,50 @@
+# Ignore build artifacts
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.vspscc
+*.suo
+
+# Ignore lock files and backup
+project.lock.json
+project.fragment.lock.json
+*.bak
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Ignore sensitive PEM files (e.g., for private keys)
 user-management-service-key.pem
+*.pem
+
+# Databases
+*.mdf
+*.ldf
+*.sqlite
+
+# Ignore generated code
+Generated/
+
+# Visual Studio settings and workspace
+.vs/
+
+# JetBrains Rider
+.idea/
+
+# Docker files
+docker-compose.override.yml
+
+# Test results
+TestResults/
+
+# Entity Framework migrations (if applicable)
+Migrations/
+
+# Sensitive configuration files
+appsettings.Development.json
+appsettings.*.json
